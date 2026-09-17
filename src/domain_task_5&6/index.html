@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Domain Task 5 - Transaction Distribution by Weekday</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a href="../index.html" class="btn" style="margin-bottom:20px;display:inline-block;">← Trở về trang chủ</a>
+    <div id="chart-container">
+        <h2>Domain Task 5: Phân bố giao dịch theo ngày trong tuần</h2>
+        <div style="text-align:center; margin-bottom:18px;">
+            <select id="year-select"></select>
+            <select id="month-select"></select>
+        </div>
+        <div id="chart"></div>
+        <div id="chart-comment" style="margin-top:24px; font-size:16px; color:#2d3a4b;"></div>
+    </div>
+    <hr style="margin:40px 0;">
+    <div id="pie-container">
+        <h2>Domain Task 6: Tỷ lệ giao dịch theo danh mục sản phẩm</h2>
+        <div style="text-align:center; margin-bottom:18px;">
+            <select id="pie-gender-select">
+                <option value="all">Tất cả giới tính</option>
+                <option value="Male">Nam</option>
+                <option value="Female">Nữ</option>
+            </select>
+            <select id="pie-agegroup-select">
+                <option value="all">Tất cả nhóm tuổi</option>
+                <option value="<20">&lt;20</option>
+                <option value="20-29">20-29</option>
+                <option value="30-39">30-39</option>
+                <option value="40-49">40-49</option>
+                <option value="50-59">50-59</option>
+                <option value=">=60">&ge;60</option>
+            </select>
+        </div>
+        <div id="pie"></div>
+        <div id="pie-comment" style="margin-top:36px; font-size:16px; color:#2d3a4b;"></div>
+    </div>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

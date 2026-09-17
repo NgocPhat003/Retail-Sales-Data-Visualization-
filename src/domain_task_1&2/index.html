@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Domain task 1&2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="../index.html" class="btn" style="margin-bottom:20px;display:inline-block;">← Trở về trang chủ</a>
+
+
+
+<h2>Biểu đồ 1: Giao dịch theo Tháng, Giới tính và Danh mục</h2>
+<label for="yearSelect">Chọn năm:</label>
+<select id="yearSelect"></select>
+<svg id="barChart" width="1000" height="450"></svg>
+<div id="chart-comment" style="margin-top:24px; font-size:16px; color:#2d3a4b;">
+  Một số tháng có số lượng giao dịch rõ ràng cao hơn các tháng khách, đặc biệt là tháng 1 do gần với Tết. Các sản phẩm Clothing của cửa hàng
+  chủ yếu nam giới mua, ta cần phải xem xét có thể thêm các mặt hàng quần áo phù hợp với phụ nữ nhiều hơn để tăng doanh thu.
+</div>
+
+<h2>Biểu đồ 2: Phân phối Doanh thu theo Giá và Danh mục</h2>
+<label for="categorySelect">Chọn danh mục sản phẩm:</label>
+<select id="categorySelect">
+  <option value="All">Tất cả</option>
+</select>
+<svg id="scatterPlot" width="1000" height="450"></svg>
+<div id="chart-comment" style="margin-top:24px; font-size:16px; color:#2d3a4b;">
+  Phân phối dữ liệu cho thấy doanh thu của cửa hàng chủ yếu đến từ các sản phẩm tầm trung và giá thấp.
+  Một số điểm có giá rất cao nhưng doanh thu thấp,có thể là sản phẩm cao cấp nhưng ít khách mua do vậy cần xem xét lại việc kinh doanh mặt hàng này.
+</div>
+
+
+<div class="tooltip" id="tooltip"></div>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

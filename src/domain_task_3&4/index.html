@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Domain task 3 & 4</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+  <a href="../index.html" class="btn">← Trở về trang chủ</a>
+
+  <!-- BAR CHART -->
+  <div id="bar-chart-container" class="chart-section">
+    <h2>Task 3: Doanh thu theo Giới tính và Nhóm Tuổi</h2>
+
+    <div class="controls">
+      <label for="genderSelect">Chọn giới tính:</label>
+      <select id="genderSelect" class="btn">
+        <option value="female">Nữ</option>
+        <option value="male">Nam</option>
+      </select>
+    </div>
+
+    <div id="chart">
+      <svg width="1000" height="600"></svg>
+      <div class="d3-tooltip" id="tooltip"></div>
+    </div>
+
+    <div id="bar-comment" style="margin-top: 20px; font-size: 14px;"></div>
+  </div>
+
+  <!-- LINE CHART -->
+  <div id="line-chart-container" class="chart-section">
+  <h2>Task 4: Biến động doanh thu sản phẩm theo tháng </h2>
+  <div class="controls" style="text-align: center; margin-bottom: 16px;">
+    <label for="yearSelect">Chọn năm:</label>
+    <select id="yearSelect" class="btn"></select>
+  </div>
+
+  <div id="line-chart-wrapper" style="text-align: center;">
+    <svg id="line-chart" width="1000" height="400"></svg>
+  </div>
+
+  <div class="d3-tooltip" id="line-tooltip"></div>
+  <div id="line-comment" style="margin-top: 20px; font-size: 14px; text-align: center;"></div>
+
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

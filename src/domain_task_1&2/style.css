@@ -1,0 +1,142 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 30px;
+  background: #f8f9fa;
+  color: #333;
+}
+
+h2 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+svg {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.tooltip {
+  position: absolute;
+  background: rgba(255,255,255,0.95);
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 8px 10px;
+  font-size: 13px;
+  pointer-events: none;
+  opacity: 0;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+  transition: opacity 0.2s ease;
+}
+
+circle:hover, rect:hover {
+  stroke: #000;
+  stroke-width: 1.5;
+  cursor: pointer;
+}
+
+.legend {
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.legend-color {
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+  border-radius: 2px;
+  display: inline-block;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 30px;
+  background: #f8f9fa;
+  color: #333;
+}
+
+h2 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+svg {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.tooltip {
+  position: absolute;
+  background: rgba(255,255,255,0.95);
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 8px 10px;
+  font-size: 13px;
+  pointer-events: none;
+  opacity: 0;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+  transition: opacity 0.2s ease;
+}
+
+circle:hover, rect:hover {
+  stroke: #000;
+  stroke-width: 1.5;
+  cursor: pointer;
+}
+
+.legend {
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 15px;
+}
+.legend-color {
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.btn {
+  display: inline-block;
+  margin: 8px 12px;
+  padding: 12px 28px;
+  background: linear-gradient(90deg, #0074d9 0%, #00c3e3 100%);
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 500;
+  transition: background 0.2s, transform 0.2s;
+}
+.btn:hover {
+  background: linear-gradient(90deg, #005fa3 0%, #00a0b3 100%);
+  transform: translateY(-2px) scale(1.04);
+}
+
+#chart-comment,
+#scatter-comment,
+#pie-comment {
+    margin-top: 36px !important;
+    font-size: 16px;
+    color: #2d3a4b;
+    text-align: center;
+    position: static;
+    z-index: 1;
+}
